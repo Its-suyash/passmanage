@@ -8,7 +8,6 @@ char name[20];
 char email[40];
 char user[20];
 char pass[20];
-
 }a,v[10];
 main()
 {
@@ -88,7 +87,6 @@ here:
 			system("cls");
 fclose(fp);
 			goto here;
-			
 		}
 		else if(z=='3'){
 		fp=fopen("data.txt","r");
@@ -103,7 +101,6 @@ xyz:
 	system("cls");
 	printf("\t\t\t\t\t\t\t\tLogin\n\n\n\n");
 	pr_s();
-	
 	printf("\n\n\nEnter your Credentials-\n(Username & Password is Case Sensetive)\n\n");
 	printf("Username :  ");
 	scanf("%s",us);
@@ -183,7 +180,7 @@ login:
 			system("pause");
 			goto login;
 			fclose(fp);}
-fclose(fp);
+	fclose(fp);
 	if(y=='3'){
 		fp=fopen("data.txt","r");
 		FILE *fp2 = fopen("data2.txt","w");
